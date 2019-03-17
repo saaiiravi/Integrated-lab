@@ -34,6 +34,8 @@ public class LogoutServlet extends HttpServlet {
            request.getRequestDispatcher("link.html").include(request, response);
            
            Cookie ck=new Cookie("name","");
+           //ck.
+           
            ck.setMaxAge(0);
            response.addCookie(ck);
            

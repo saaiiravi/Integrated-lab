@@ -19,6 +19,7 @@ try{
     Class.forName("com.mysql.jdbc.Driver");
     Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/netbeans","root","Varsha26");
     Statement st=con.createStatement();
+    //Statement st=con.createStatement();
     int i=st.executeUpdate("insert into userform(name,password,email,sex,country)values('"+name+"','"+pass+"','"+email+"','"+sex+"','"+country+"')");
     out.println("REgistered");
 }catch(Exception e){

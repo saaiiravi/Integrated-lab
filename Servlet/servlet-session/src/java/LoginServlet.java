@@ -41,6 +41,8 @@ public class LoginServlet extends HttpServlet {
             if(password.equals("admin")){
                 out.println("Welcome"+name);
                 HttpSession sess=request.getSession();
+                //sess.setAttribute(name, name);
+                //HttpSession sess=request.getSession();
                 sess.setAttribute("name", name);
             }else{
                 out.println("password is wrong");

@@ -35,7 +35,8 @@ public class ProfileServlet extends HttpServlet {
           if(sess!=null){
               String name=(String)sess.getAttribute("name");
               out.println("Welcome to your profile"+name);
-                        }else{
+                        }
+          else{
               out.println("Please Login first");
           }
           

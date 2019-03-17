@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11 Mar, 2019 10:24:50 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="mypack.Userrs" table="userrs" catalog="hibernate" optimistic-lock="version">
+        <id name="firstname" type="string">
+            <column name="firstname" />
+            <generator class="assigned" />
+        </id>
+        <property name="lastname" type="string">
+            <column name="lastname" />
+        </property>
+    </class>
+</hibernate-mapping>
